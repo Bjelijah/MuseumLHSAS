@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <FrameLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="45dip"
+	    android:background="@drawable/tenpay_top_bar" >
+
+        <TextView
+            android:id="@+id/tv_map_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text="语音对讲"
+            android:textSize="18sp" />
+        
+        
+        <LinearLayout 
+            android:id="@+id/ll_talk_dialog_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            >
+            <ImageView android:id="@+id/iv_talk_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@mipmap/talk_dialog_list2"
+                
+                />
+            
+            
+        </LinearLayout>
+        
+        
+        
+    </FrameLayout>
+
+    
+    
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" >
+
+        <ImageView
+            android:id="@+id/iv_talk_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/online_b" />
+
+        <TextView
+            android:id="@+id/tv_talk_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/online" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_talk_state2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/talk_btn_red"
+        android:text="按下按钮请求对讲" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom" >
+        
+        <ImageView
+            android:id="@+id/iv_talk_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+           
+            android:layout_marginBottom="80dp"
+            android:src="@mipmap/talk_red" />
+
+        
+ <!--  
+        <Button
+            android:id="@+id/btn_talk_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/btn_talk_test2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="button2" />
+    --> 
+        <ImageView
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:scaleType="fitXY"
+		    android:src="@mipmap/talk_bottom" />
+    </LinearLayout>
+
+
+</LinearLayout>

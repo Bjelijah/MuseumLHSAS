@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <FrameLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="45dip"
+	    android:background="@drawable/tenpay_top_bar" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="地图列表" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_map_list_talk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="right|center_vertical"
+            android:paddingRight="10dp" 
+            android:visibility="visible">
+            <ImageView
+	            android:id="@+id/iv_map_list_talk"
+	            android:layout_gravity="center"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@mipmap/icon_talk"
+	             />
+            <TextView
+                android:id="@+id/tv_map_list_talk"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:textColor="@color/white"
+	            android:textSize="12sp"
+	            android:text="语音对讲" />
+        </LinearLayout>
+         
+        
+    </FrameLayout>
+    
+    <com.howell.ehlib.MyListView
+        android:id="@+id/map_list_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+</LinearLayout>

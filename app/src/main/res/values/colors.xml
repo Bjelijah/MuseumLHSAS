@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  	<color name="text_hint_gray">#b2b6bb</color>
+  	<color name="background_tab_pressed">#6633B5E5</color>
+  	
+  	<color name="white">#ffffff</color>
+  	<color name="red">#ff0000</color>
+  	<color name="green">#30ff00</color>
+  	<color name="gray">#303135</color>
+  	<color name="black">#000000</color>
+  	<color name="dark_gray">#222325</color>
+  	
+  	<color name="talk_btn_red">#ff5959</color>
+  	
+  	<color name="alarm_history_gray">#969696</color>
+  	
+</resources>

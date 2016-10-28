@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <FrameLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="45dip"
+	    android:background="@drawable/tenpay_top_bar" >
+
+        <TextView
+            android:id="@+id/tv_map_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+      
+        <LinearLayout
+            android:id="@+id/ll_map_talk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="right|center_vertical"
+            android:paddingRight="10dp" >
+            <ImageView
+	            android:id="@+id/iv_map_talk"
+	            android:layout_gravity="center"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@mipmap/icon_talk"
+	             />
+            <TextView
+                android:id="@+id/tv_map_talk"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:textColor="@color/white"
+	            android:textSize="12sp"
+	            android:text="语音对讲" />
+        </LinearLayout>
+        
+
+        <ImageView
+            android:id="@+id/map_activity_img_alarm"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:paddingLeft="10dp"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/alarm" />
+        
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+</LinearLayout>
